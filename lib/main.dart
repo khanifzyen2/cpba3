@@ -6,7 +6,10 @@ import 'package:flutter/material.dart';
 //import './column.dart';
 //import './listviewbuilder.dart';
 //import './listviewseparated.dart';
-import './expanded.dart';
+// import './expanded.dart';
+//import './flexible.dart';
+// import './stack.dart';
+import './align.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: "MyApp",
       debugShowCheckedModeBanner: false,
-      home: MyExpanded(),
+      home: MyAlign(),
     );
   }
 }

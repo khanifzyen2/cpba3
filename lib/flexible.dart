@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyExpanded extends StatelessWidget {
-  const MyExpanded({Key? key}) : super(key: key);
+class MyFlexible extends StatelessWidget {
+  const MyFlexible({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,18 +14,16 @@ class MyExpanded extends StatelessWidget {
             child: Row(
               children: [
                 SizedBox(
-                  height: 100,
-                  child: _blueBox(),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    child: const Text("Halo"),
+                    onPressed: () {},
+                  ),
                 ),
-                Expanded(
-                  flex: 2,
-                  child: _blueBox(),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: _blueBox(),
-                ),
-                _blueBox(),
+                // SizedBox(height: 100, child: _blueBox()),
+                // Flexible(fit: FlexFit.tight, flex: 2, child: _blueBox()),
+                // Flexible(flex: 1, child: _blueBox()),
+                // Flexible(flex: 1, child: _blueBox()),
               ],
             ),
           ),
