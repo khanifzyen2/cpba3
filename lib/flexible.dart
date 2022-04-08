@@ -13,17 +13,10 @@ class MyFlexible extends StatelessWidget {
             height: 100,
             child: Row(
               children: [
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    child: const Text("Halo"),
-                    onPressed: () {},
-                  ),
-                ),
-                // SizedBox(height: 100, child: _blueBox()),
-                // Flexible(fit: FlexFit.tight, flex: 2, child: _blueBox()),
-                // Flexible(flex: 1, child: _blueBox()),
-                // Flexible(flex: 1, child: _blueBox()),
+                SizedBox(height: 100, child: _blueBox()),
+                Flexible(fit: FlexFit.tight, flex: 2, child: _blueBox()),
+                Flexible(flex: 1, child: _blueBox()),
+                Flexible(flex: 1, child: _blueBox()),
               ],
             ),
           ),
