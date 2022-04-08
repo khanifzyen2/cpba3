@@ -1,10 +1,12 @@
+//import './homepage.dart';
 import 'package:flutter/material.dart';
 // import './my_stateful_widget.dart';
 // import './padding.dart';
 //import './row.dart';
 //import './column.dart';
 //import './listviewbuilder.dart';
-import './listviewseparated.dart';
+//import './listviewseparated.dart';
+import './expanded.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: "MyApp",
       debugShowCheckedModeBanner: false,
-      home: MyListViewSeparated(),
+      home: MyExpanded(),
     );
   }
 }

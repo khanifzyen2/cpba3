@@ -44,7 +44,7 @@ class Homepage extends StatelessWidget {
           IconButton(
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text("Ini namanya snackbar")));
+                  const SnackBar(content: Text("Ini adalah snackbar")));
             },
             icon: const Icon(Icons.add_alert),
             tooltip: 'Show Alert',
@@ -53,7 +53,7 @@ class Homepage extends StatelessWidget {
         ],
       ),
       body: const Center(
-        child: Text("Halo World"),
+        child: Text("Halo dunia"),
       ),
     );
   }
