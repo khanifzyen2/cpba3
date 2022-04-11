@@ -13,10 +13,13 @@ class MyAspectRatio extends StatelessWidget {
           width: double.infinity,
           height: 100,
           child: AspectRatio(
+            //silahkan gonta-ganti nilai aspect ratio dibawah ini
             aspectRatio: 16 / 9,
             child: Container(
               color: Colors.green,
-              //child: Text("Aspect Ratio"),
+              child: const Center(
+                child: Text("Aspect Ratio"),
+              ),
             ),
           ),
         ),
