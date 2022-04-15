@@ -36,6 +36,7 @@ class SecondPage extends StatelessWidget {
             child: const Text("Second Page"),
             onPressed: () {
               Navigator.pushNamed(context, '/third');
+              // Navigator.pushReplacementNamed(context, '/third');
             },
           ),
         ),
@@ -79,7 +80,11 @@ class FourthPage extends StatelessWidget {
           child: ElevatedButton(
             child: const Text("Fourth Page"),
             onPressed: () {
-              Navigator.pushNamed(context, '/first');
+              // Navigator.pushNamed(context, '/first');
+              //Navigator.pushNamedAndRemoveUntil(
+              //    context, '/first', (route) => false);
+              Navigator.pushNamedAndRemoveUntil(
+                  context, '/first', ModalRoute.withName('/second'));
             },
           ),
         ),
