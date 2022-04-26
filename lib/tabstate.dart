@@ -20,7 +20,6 @@ class _MyTabStateState extends State<MyTabState>
       print("hello my friend");
       print("tablController index: ${_tablController.index}");
     });
-    // _tablController.dispose();
   }
 
   @override

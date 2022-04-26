@@ -7,7 +7,7 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My Button Demo"),
+        title: const Text("My Button Demo"),
       ),
       body: Center(
         child: Column(
@@ -15,7 +15,21 @@ class MyButton extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {},
-              child: const Text("Elevated Button"),
+              child: const Padding(
+                padding: EdgeInsets.all(15.0),
+                child: Text("Elevated Button"),
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.red,
+                onPrimary: Colors.yellow,
+                textStyle: const TextStyle(
+                  fontSize: 24,
+                ),
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+              ),
             ),
             TextButton(
               onPressed: () {},
